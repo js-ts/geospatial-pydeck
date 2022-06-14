@@ -1,0 +1,3 @@
+tasks:
+- init: pip3 install jupyter pandas matplotlib numpy pydeck
+  command: for f in *.ipynb; do jupyter nbconvert --execute --to notebook --inplace "$f"; done
